@@ -1,18 +1,21 @@
 import Image from 'next/image'
 import { Fleur_De_Leah, Inter } from 'next/font/google'
-
+import React, { useState } from 'react'; 
 const inter = Inter({ subsets: ['latin'] })
+import Table from './table'
+
+
 
 export default function Home() {
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-lg lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center dark:from-inherit lg:static lg:w-auto lg:p-4 lg:dark:bg-zinc-800/30">
+      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono lg:flex">
+        <p className="fixed left-0 top-0 flex w-full justify-center dark:from-inherit lg:static lg:w-auto lg:p-4 lg:dark:bg-zinc-800/30 text-xl">
           Solar Radiation Dashboard
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center  lg:static lg:h-auto lg:w-auto ">
+        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center  lg:static lg:h-auto lg:w-auto">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
             href="https:unsplash.com"
@@ -34,8 +37,14 @@ export default function Home() {
           priority
         />
       </div>
-
       
+      <div className="container mx-auto">
+        <h1 className="text-3xl font-bold">Products</h1>
+
+
+      </div>
+
+
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
