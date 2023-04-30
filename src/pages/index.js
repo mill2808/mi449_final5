@@ -1,9 +1,8 @@
 import Image from 'next/image'
 import { Fleur_De_Leah, Inter } from 'next/font/google'
-import React, { useState } from 'react'; 
+import React, { useState } from 'react'
+import RadiationExample from './table'
 const inter = Inter({ subsets: ['latin'] })
-import Table from './table'
-
 
 
 export default function Home() {
@@ -38,10 +37,9 @@ export default function Home() {
         />
       </div>
       
-      <div className="container mx-auto">
-        <h1 className="text-3xl font-bold">Products</h1>
-
-
+      <div className="container mx-auto p-2">
+        <h3 className="text-2xl p-5">Radiation in Detroit By Month</h3>
+      <RadiationExample />
       </div>
 
 
