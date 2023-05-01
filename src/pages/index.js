@@ -53,11 +53,7 @@ export default function Home() {
         <NRELData/>
       </div>
 
-      <div className="p-3">
-        <h3 className="text-xl">Please provide feedback</h3>
-        <UserForm/>
-      </div>
-
+      <h3>See Below for some Solar Resources!</h3>
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://pvwatts.nrel.gov/"
@@ -126,6 +122,10 @@ export default function Home() {
             For more information, see NREL resources.
           </p>
         </a>
+      </div>
+      <div className="p-3">
+        <h3 className="text-xl">Please provide feedback</h3>
+        <UserForm/>
       </div>
     </main>
   )
