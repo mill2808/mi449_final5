@@ -3,6 +3,7 @@ import { Fleur_De_Leah, Inter } from 'next/font/google'
 //import React, { useState } from 'react'
 import RadiationExample from './table'
 import NRELData from './weatherData'
+import UserForm from './userInput'
 //import Nreldata from './weatherData'
 //import UserForm from './userInput'
 //import NRELdata from './weatherData'
@@ -50,6 +51,11 @@ export default function Home() {
       <div className="p-3">
         <h3 className="text-xl">NREL Data:</h3>
         <NRELData/>
+      </div>
+
+      <div className="p-3">
+        <h3 className="text-xl">Please provide feedback</h3>
+        <UserForm/>
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">

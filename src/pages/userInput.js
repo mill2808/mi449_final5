@@ -1,22 +1,30 @@
+import React from 'react'
 import { useState } from 'react'
 
-export default function UserForm(){
-    const [location, setLocation] = useState('')
-    const whenSubmitted = (e) => {
-        e.preventDefault()
-        setLocation(event.target.location.value)}
-       
-       
-    return(
-            <form onSubmit={whenSubmitted}>
-                <label>Area Code:</label>
-                <input 
-                    type="text" 
-                    value={location}
-                />
-                <button type="submit">Submit</button>
-            </form>
-    )
-    
 
+
+const UserForm = () => {
+    return (
+        <form>
+      <div className="mb-4">
+        <label
+          className="block text-black-700 font-bold mb-2"
+          htmlFor="feedback">
+        </label>
+        <textarea
+          className="border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="feedback">
+          </textarea>
+      </div>
+      <div className="flex items-center justify-center">
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          type="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+  )
 }
+
+export default UserForm
