@@ -42,12 +42,13 @@ export default function Home() {
       </div>
       
       <div className="content-center container p-2">
-        <h3 className="text-2xl p-5">Radiation in Detroit By Month</h3>
+        <h3 className="text-2xl">Radiation in Detroit By Month</h3>
+        <p className = "p-2">Average daily radiation determines how many solar panels would be needed to achieve your electricity generation goals.</p>
       <RadiationExample />
       </div>
 
-      <div className="p-2">
-        <h3 className="text-lg">NREL Data:</h3>
+      <div className="p-3">
+        <h3 className="text-xl">NREL Data:</h3>
         <NRELData/>
       </div>
 
