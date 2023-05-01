@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { Fleur_De_Leah, Inter } from 'next/font/google'
 import React, { useState } from 'react'
 import RadiationExample from './table'
+import UserForm from './userInput'
+import NRELdata from './weatherData'
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -42,6 +44,15 @@ export default function Home() {
       <RadiationExample />
       </div>
 
+      <div>
+        <h3 className="text-2xl p-5">Please fill out the following form:</h3>
+        <UserForm />
+      </div>
+
+      <div>
+        <h5 className="text-2xl p-5">Your Local Average Daily Radiation:</h5>
+        <NRELdata />
+      </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
