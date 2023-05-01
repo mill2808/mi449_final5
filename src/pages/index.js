@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import { Fleur_De_Leah, Inter } from 'next/font/google'
-import React, { useState } from 'react'
+//import React, { useState } from 'react'
 import RadiationExample from './table'
-import UserForm from './userInput'
-import NRELdata from './weatherData'
+import NRELData from './weatherData'
+//import Nreldata from './weatherData'
+//import UserForm from './userInput'
+//import NRELdata from './weatherData'
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -39,53 +41,48 @@ export default function Home() {
         />
       </div>
       
-      <div className="container mx-auto p-2">
+      <div className="content-center container p-2">
         <h3 className="text-2xl p-5">Radiation in Detroit By Month</h3>
       <RadiationExample />
       </div>
 
-      <div>
-        <h3 className="text-2xl p-5">Please fill out the following form:</h3>
-        <UserForm />
-      </div>
-
-      <div>
-        <h5 className="text-2xl p-5">Your Local Average Daily Radiation:</h5>
-        <NRELdata />
+      <div className="p-2">
+        <h3 className="text-lg">NREL Data:</h3>
+        <NRELData/>
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+          href="https://pvwatts.nrel.gov/"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-yellow-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Solar Calculator{' '}
+            PV Watts{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+            Find info on system specifications and size.
           </p>
         </a>
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+          href="https://sam.nrel.gov/"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-yellow-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
+            SAM{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+            For in-depth downloadable cost analysis.
           </p>
         </a>
         
@@ -107,19 +104,19 @@ export default function Home() {
         </a>
 
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+          href="https://www.nrel.gov/"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-yellow-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
+            NREL{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            For more information, see NREL resources.
           </p>
         </a>
       </div>
