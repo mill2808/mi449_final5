@@ -1,12 +1,8 @@
 import Image from 'next/image'
 import { Fleur_De_Leah, Inter } from 'next/font/google'
-//import React, { useState } from 'react'
 import RadiationExample from './table'
 import NRELData from './weatherData'
 import UserForm from './userInput'
-//import Nreldata from './weatherData'
-//import UserForm from './userInput'
-//import NRELdata from './weatherData'
 const inter = Inter({ subsets: ['latin'] })
 
 
